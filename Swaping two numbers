@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    int x, y;
+
+    printf("Enter two numbers: ");
+    scanf("%d %d", &x, &y);
+
+    // Swapping without using a third variable
+    x = x + y;
+    y = x - y;
+    x = x - y;
+
+    printf("After swapping:\n");
+    printf("x = %d\n", x);
+    printf("y = %d\n", y);
+
+    return 0;
+}
